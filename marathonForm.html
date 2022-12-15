@@ -10,19 +10,24 @@
 
 <body>
     <h1>Race Registration!</h1>
+    
     <form action="/marathon">
         <label for="firstname">First Name</label>
         <input type="text" name="firstname" id="firstname">
         <label for="lastname">Last Name</label>
         <input type="text" name="lastname" id="lastname">
+
+<!-- 라디오 기능 시작 -->
         <div>
             <p>Select a Race:</p>
         </div>
+
         <P>
         <div>
             <input type="radio" name="stand" id="fun" value="funrun">
             <label for="fun">Fun Run 5k</label>
         </div>
+        <!-- input의 id와 lavel의 for을 연결 -->
         <div>
             <input type="radio" name="stand" id="half" value="half">
             <label for="half">Half Marathon</label>
@@ -31,11 +36,14 @@
             <input type="radio" name="stand" id="full" value="full">
             <label for="full">Full Marathon</label>
         </div>
+        <!-- 이메일 및 패스워드 기능시작 -->
         </P>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
+
+        <!-- 박스선택기능 시작 -->
         <p>
             <label for="age">Select Age Group</label>
             <select name="age" id="age">
