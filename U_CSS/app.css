@@ -1,3 +1,15 @@
 h2 {
-    color: indigo;
+    color: teal;
+    background-color: plum;
 }
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+    background: orange;
+}
+/* background 와 background-color는 다르다 background는 더 많은 옵션을 가지고 있다.ex)배경사진,텍스트등등 */
