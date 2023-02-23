@@ -1,7 +1,9 @@
 h2 {
-    color: teal;
-    background-color: plum;
+    color: #5fcffc;
+    background-color: rgb(89, 151, 0);
 }
+
+/* 보통 색상을 선택할 때 rgb를 사용하는데 그 중에서 16진수 기법을 많이 사용함 */
 
 button {
     color: magenta;
@@ -11,5 +13,9 @@ button {
 p {
     color: olive;
     background: orange;
+}
+
+body{
+    background-color: #cc55ee; /* #cc55ee == #c5e // #000000 == #000 */ 
 }
 /* background 와 background-color는 다르다 background는 더 많은 옵션을 가지고 있다.ex)배경사진,텍스트등등 */
