@@ -15,3 +15,24 @@ h1,h2 {
     background-color: #1d3557;
     color: #f1faee;
 }
+/* ID선택을 할 때는 #을 사용
+class를 선택할 때는 .을 사용 */
+
+span{
+    color: #447b9d;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post a {
+    color: #457b9d;
+}
+
+footer a {
+    color: #e63946;
+}
+/* 자식선택-상위에서 띄어쓰기 후 그 태그를 선택 */
