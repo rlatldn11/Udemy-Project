@@ -30,9 +30,51 @@ span{
 
 .post a {
     color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer a {
     color: #e63946;
 }
 /* 자식선택-상위에서 띄어쓰기 후 그 태그를 선택 */
+/* 
+footer > a{
+    color:#1d3557;
+}
+ footer바로 밑에있는 a태그를 타겟으로함
+div + li{
+}
+div 와 가장 인접한 li를 타겟으로 함
+*/
+
+input[type="password"]{
+    color: greenyellow;
+}
+/* input타입에 password인 색상을 변경 */
+
+a[href*="google"]{
+    color: magenta;
+}
+/* a헤쉬태그 전부중 google이라는 단어가 있으면 변경 */
+
+.post button:hover{
+    background-color: #e63946;
+    color: #f1faee;
+}
+/* hover:마우스가 지정구역에 들어올시 스타일을 변경 */
+
+.post a:hover{
+    text-decoration: underline;
+}
+/* ex)a태그에 마우스를 가져갈시 밑줄형성 */
+
+.post button:active {
+    background-color: #02c39a;
+}
+/* 해당 구역을 클릭할 시 스타일 변경 */
+
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+/* 패턴으로 스타일 변경 ex)2번째 section 마다 배경색 변경 */
