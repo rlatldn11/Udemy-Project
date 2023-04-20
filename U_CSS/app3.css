@@ -2,23 +2,20 @@ body {
     background-color: #f1faee;
 }
 
-button {
-    font-size: 30px;
-    background-color: #a8dadc;
-}
-
-h1,h2 {
+h1,
+h2 {
     color: #1d3557;
 }
 
-#signup{
+#signup {
     background-color: #1d3557;
     color: #f1faee;
 }
+
 /* ID선택을 할 때는 #을 사용
 class를 선택할 때는 .을 사용 */
 
-span{
+span {
     color: #447b9d;
 }
 
@@ -37,6 +34,7 @@ span{
 footer a {
     color: #e63946;
 }
+
 /* 자식선택-상위에서 띄어쓰기 후 그 태그를 선택 */
 /* 
 footer > a{
@@ -48,48 +46,74 @@ div + li{
 div 와 가장 인접한 li를 타겟으로 함
 */
 
-input[type="password"]{
+input[type="password"] {
     color: greenyellow;
 }
+
 /* input타입에 password인 색상을 변경 */
 
-a[href*="google"]{
+a[href*="google"] {
     color: magenta;
 }
+
 /* a헤쉬태그 전부중 google이라는 단어가 있으면 변경 */
 
-.post button:hover{
-    background-color: #e63946;
-    color: #f1faee;
-}
-/* hover:마우스가 지정구역에 들어올시 스타일을 변경 */
 
-.post a:hover{
+
+.post a:hover {
     text-decoration: underline;
 }
+
 /* ex)a태그에 마우스를 가져갈시 밑줄형성 */
 
-.post button:active {
-    background-color: #02c39a;
-}
-/* 해당 구역을 클릭할 시 스타일 변경 */
-
-.post:nth-of-type(2n){    
+.post:nth-of-type(2n) {
     background-color: #dfe8dc;
 }
+
 /* 패턴으로 스타일 변경 ex)2번째 section 마다 배경색 변경 */
 
-h2::first-letter{
+h2::first-letter {
     font-size: 50px;
 }
+
 /* 첫번째 글자 사이즈 50px로 변경 */
 
 p::first-line {
     color: purple;
 }
+
 /* 첫번째 줄 색상 변경 */
 
-p::selection{
+p::selection {
     background-color: #fcbf49;
 }
+
 /* p요소중 드래그한 색상 노란색으로 변경 */
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+/* 해당 구역을 클릭할 시 스타일 변경 */
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+/* hover:마우스가 지정구역에 들어올시 스타일을 변경 */
+
+button:hover {
+    background-color: olive;
+}
+
+/* 동일한 hover의 특성을 가졋을 경우 좀더 구체적인 것을 우선으로 적용 __우선순위 ID>CLASS>ELEMENT */
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+/* 
+button {
+    background-color: magenta; !important;
+} --> !important 를 사용하면 최우선 사항이 되어 적용되어 버튼의 배경색이 모두 magenta색으로 바뀐다(대부분 쓰이지 않음)*/
