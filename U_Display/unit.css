@@ -1,0 +1,48 @@
+html {
+     font-size: 10px;
+}
+
+#ems h2{
+     font-size: 2em;
+     margin-left: 1em;
+}
+/* em은 무모 크기를 맞춤 ex) 1em이면 부모크기와 1:1 2em이면 부모크기의 2배를 맞춤 */
+#ems h3 {
+     font-size: 1.5em;
+}
+#ems p {
+     font-size: 1em;
+}
+#ems {
+     font-size: 15px;
+}
+
+button{ 
+     font-size: 1em;
+     padding: 0 1em ;
+     border-radius: 0.5em;
+     color: white;
+     background-color: green;
+}
+
+ul{
+     font-size: 1.5em; 
+}
+
+/* em의 문제점: 항상 부모보다 더 작아지던가 커져서 속성이 중복될경우 점점 커지거나 작아짐 */
+
+#rems h2{
+     font-size: 3rem;
+}
+#rems h3{
+     font-size: 2rem;
+}
+#rems ul{
+     font-size: 0.5rem;
+}
+
+#rems button{
+     font-size: 1.5rem;
+}
+
+/* rem은 기본적인 html고정 사이즈에서 변화를 하여 예측하기가 em보다 더 쉽다 */
