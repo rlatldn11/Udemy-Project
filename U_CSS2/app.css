@@ -1,0 +1,22 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255,255,255,0.7);
+    /* ->오직 백그라운드 색상에만 영향을 줌 */
+    /* background-color: #00cca0b9; */
+    /* 이렇게 쓰는것도 가능하지만 보통은 rgba를 사용한다(좀더 정보시각화) */
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.3;
+}
+/* opacity는 모든 요소를 투명하게 한다 */

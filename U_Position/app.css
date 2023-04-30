@@ -1,0 +1,46 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+}
+/* 포지션이 스태틱 = 기본 위치 즉 top에 변화를 주어도 기본값으로 반영 */
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+/* relative는 현재 위치에서 변화를 줄 수 있다. 원래위치에서의 상대적인 개념*/
+
+#absolute {
+    position: relative;
+}
+/* absolute의 조상블럭 하지만 공간은 차지 하지 않는다 */
+
+#absolute #middle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+/* absolute은 문서의 일반적인 흐름에서 요소가 제거되고 공간도 배정되지 않는다. 또한 위치를 지정할 때 가장 가까이 있는 조상을 기준으로 하거나 조상이 없다면 초기 컨테이너 블럭인  body를 기준으로 상대적인 움직임을 취함*/
+
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+    left: 100px;
+}
+/* absolute와 비슷하기 일반적인 흐름에서 제거 공간도 배정되지 않고 초기 블록에 상대적으로 위치한다. 또한 스크롤을 움직여도 화면블록에 고정되어 있다*/
+
+/* sticky요소는 시작할때는 고정되있지않고 그자리에 머물다 스크롤을 움직이면 화면에 고정되어 따라온다 */
