@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+}
+/* display: flex; = 한 축으로 정렬
+flex-direction - 기본으로 row로 할당 */
+
+#container div {
+    width: 200px;
+    height: 200px;
+}
